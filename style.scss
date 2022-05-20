@@ -1,0 +1,74 @@
+$font-family-sans-serif: 'League Spartan', sans-serif;
+
+
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/lightbox2/dist/css/lightbox.css";
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.HeroPadding{
+padding:  120px 120px 0px 120px;
+}
+.Shop-now{
+  padding: 0 0 0 120px;
+}
+p{
+  font-size: 20px;
+}
+.Show-now-link{
+    text-decoration: none;
+    letter-spacing: 15px;
+    transition: 0.2s;
+    color: black;
+}
+.Show-now-link:hover{
+  text-decoration: none;
+  letter-spacing: 20px;
+  color: #999999;
+
+  .Show-now-arrow{
+    opacity: 0.5;
+  }
+}
+.Cbtn{
+  width: 75px;
+  height: 70px;
+  background-color: black;
+  color: #9e9494;
+  border: none;
+  transition: 0.2s;
+}
+.Cbtn:hover{
+  background-color: #999999;
+  width: 90px;
+
+}
+
+@media screen and (max-width: 1366px){
+  .HeroPadding{
+    padding: 20px 50px 0 50px;
+  }
+  .Shop-now{
+    padding: 0 0 0 50px;
+  }
+  .Cbtn{
+    width: 55px;
+    height: 50px;
+  }
+  .Cbtn:hover{
+    background-color: #999999;
+    width: 70px;
+  }
+}
+
+@media screen and (max-width:414px){
+  .Btn-for-mobile{
+      position: absolute;
+    top: -50px;
+    right: 0;
+  }
+}
